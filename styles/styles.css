@@ -1,0 +1,188 @@
+
+.navigation-menu {
+    background-color: green; 
+    color: white; 
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 0; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Styles for the top menu links */
+.topmenu {
+    width: 80vw; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+}
+
+.topmenu a {
+    color: white; 
+    text-decoration: none; 
+    font-size: 20px; 
+}
+
+.topmenu a:hover {
+    text-decoration: underline; 
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    background-color: rgb(50, 189, 8); 
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: darkgreen; 
+}
+
+/* Menu image styling */
+.menuImg {
+    width: 150px;
+    height: 100px;
+    object-fit: cover; 
+    margin-right: 20px; 
+}
+
+/* Flex container for sushi train */
+.foodMenu {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: auto; 
+}
+
+.sushi-train {
+    display: flex;
+    flex-direction: row;
+    width: 200%; 
+    animation: sushiTrainRotation 30s linear infinite;
+}
+
+/* Define the scrolling animation */
+@keyframes sushiTrainRotation {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+.container{
+    max-width: 1170px;
+    margin:auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.footer{
+    background-color: ;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: green;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: greenz;
+    padding-left: 8px;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: black(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: green;
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: green;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+.bodyText {
+    padding: 40px;
+    margin: 20px auto;
+    max-width: ;
+    background-color: #f8f9fa; 
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.bodyText h1 {
+    font-size: 2.5rem; 
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center; 
+    font-family: 'Arial', sans-serif; 
+}
+
+
+.bodyText p {
+    font-size: 1.125rem; 
+    color: #555;
+    line-height: 1.6; 
+    text-align: center;
+    margin-bottom: 0;
+    font-family: 'Georgia', serif; 
+}
